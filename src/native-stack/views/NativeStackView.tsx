@@ -9,6 +9,7 @@ import {
   StackNavigationState,
   StackActions,
   useTheme,
+  ParamListBase,
 } from '@react-navigation/native';
 import HeaderConfig from './HeaderConfig';
 import {
@@ -19,7 +20,7 @@ import {
 const Screen = (ScreenComponent as unknown) as React.ComponentType<ScreenProps>;
 
 type Props = {
-  state: StackNavigationState;
+  state: StackNavigationState<ParamListBase>;
   navigation: NativeStackNavigationHelpers;
   descriptors: NativeStackDescriptorMap;
 };

@@ -28,7 +28,7 @@ export type NativeStackNavigationProp<
 > = NavigationProp<
   ParamList,
   RouteName,
-  StackNavigationState,
+  StackNavigationState<ParamListBase>,
   NativeStackNavigationOptions,
   NativeStackNavigationEventMap
 > & {
@@ -251,7 +251,7 @@ export type NativeStackNavigatorProps = DefaultNavigatorOptions<
 export type NativeStackDescriptor = Descriptor<
   ParamListBase,
   string,
-  StackNavigationState,
+  StackNavigationState<ParamListBase>,
   NativeStackNavigationOptions
 >;
 
